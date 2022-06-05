@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  background-color: hsl(230, 17%, 14%);
+  color: #fff;
+  font-family: "Inter", serif;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+// Header
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  align-items: center;
+  .header-title {
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    .total-followers {
+      color: hsl(228, 34%, 66%);
+      margin-top: 0.3rem;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  .theme {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    .dark-mode-text {
+      color: hsl(228, 34%, 66%);
+    }
+  }
+}
+.toggle {
+  min-width: 3rem;
+  min-height: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+  background: linear-gradient(to left, hsl(146, 68%, 55%), hsl(210, 78%, 56%));
+}
+.toggle-dot {
+  height: 1.2rem;
+  width: 1.2rem;
+  background: hsl(230, 17%, 14%);
+  position: absolute;
+  margin-left: 2px;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+}
+// ACCOUNTS SECTION
+.accounts-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+
+  .account-card:nth-child(1),
+  .account-card:nth-child(2),
+  .account-card:nth-child(3) {
+    .today {
+      color: hsl(146, 68%, 55%);
+    }
+  }
+  .account-card:nth-child(1) {
+    border-top: 5px solid hsl(208, 92%, 53%);
+  }
+  .account-card:nth-child(2) {
+    border-top: 5px solid hsl(203, 89%, 53%);
+  }
+  .account-card:nth-child(4) {
+    border-top: 5px solid hsl(348, 97%, 39%);
+    .today {
+      color: hsl(356, 69%, 56%);
+    }
+  }
+  .account-card:nth-child(3) {
+    position: relative;
+  }
+  .account-card:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left, hsl(329, 70%, 58%), hsl(37, 97%, 70%));
+    top: 0;
+    left: 0;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+  }
+
+  .account-card {
+    padding: 2rem;
+    background-color: hsl(228, 28%, 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.3rem;
+
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+
+      .username {
+        color: hsl(228, 34%, 66%);
+      }
+    }
+
+    .num-of-followers {
+      margin-top: 1.5rem;
+      font-size: 4.5rem;
+      font-weight: 700;
+    }
+
+    .followers-text {
+      color: hsl(228, 34%, 66%);
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+    .follower-change {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin-top: 2rem;
+    }
+  }
+}
+//Section OVERVIEW
+
+.overview {
+  .title {
+    margin: 3.5rem 0 2rem;
+    font-size: 1.8rem;
+  }
+  .per-social-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+
+    .social-card {
+      background-color: hsl(228, 28%, 20%);
+      border-radius: 0.3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      padding: 2rem;
+      .social,
+      .interactAmt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .social {
+        p {
+          color: hsl(228, 34%, 66%);
+          font-size: 14px;
+        }
+      }
+
+      .interactAmt {
+        .num-of-interact {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        .today {
+          display: flex;
+          align-items: center;
+          gap: 0.2rem;
+          color: hsl(163, 72%, 41%);
+        }
+      }
+    }
+  }
+}
+// Mobile
+@media (max-width: 1440px) {
+  .container {
+    margin: 0 2rem;
+  }
+}
+@media (max-width: 695px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    .total-followers {
+      padding-bottom: 2rem;
+    }
+    .theme {
+      padding-top: 2rem;
+      width: 100%;
+      align-self: center;
+      justify-content: space-between;
+      border-top: 1px solid hsl(228, 12%, 44%);
+    }
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+}
+.down {
+  color: hsl(356, 69%, 56%) !important;
+}
+
+//active
+.toggle:hover {
+  cursor: pointer;
+}
+
+.accounts-section .account-card:hover,
+.per-social-cards .social-card:hover {
+  cursor: pointer;
+  //   background-color: hsl(228, 28%, 20%);
+  background-color: hsla(236, 17%, 32%, 0.785);
+}
+
+// Light Mode
+
+body.light {
+  color: hsl(230, 17%, 14%);
+  background-color: #fff;
+  min-height: 100vh;
+  .accounts-section .account-card:hover,
+  .per-social-cards .social-card:hover {
+    color: hsla(0, 0%, 0%, 0.781);
+    cursor: pointer;
+    background-color: hsl(227, 47%, 96%);
+  }
+  .account-card {
+    background-color: hsl(225, 100%, 98%);
+    .num-of-followers {
+      color: black;
+    }
+  }
+  .per-social-cards {
+    .social-card {
+      background-color: hsl(225, 100%, 98%);
+      color: black;
+    }
+  }
+  .theme {
+    .toggle {
+      background-color: #000;
+    }
+  }
+  .toggle-light {
+    background: hsl(0, 0%, 100%);
+    right: 2px;
+  }
+}

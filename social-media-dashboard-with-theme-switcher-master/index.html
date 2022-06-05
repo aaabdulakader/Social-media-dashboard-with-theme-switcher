@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Social media Dashboard</title>
+  </head>
+  <body class="body">
+    <main class="container">
+      <!-- HEADER SECTION -->
+
+      <header class="header">
+        <div class="header-title">
+          <h1 class="title">Social Media Dashboard</h1>
+          <p class="total-followers">Total Followers: 23,004</p>
+        </div>
+        <div class="theme">
+          <p class="dark-mode-text">Dark Mode</p>
+          <div class="toggle">
+            <div class="toggle-dot toggle-light"></div>
+          </div>
+        </div>
+      </header>
+      <!-- ACCOUNTS SECTION -->
+      <section class="accounts-section">
+        <div class="account-card">
+          <div class="social">
+            <div class="icon">
+              <img
+                src="images/icon-facebook.svg"
+                alt="faceboobk icon"
+                srcset=""
+              />
+            </div>
+            <p class="username">@nathanf</p>
+          </div>
+          <p class="num-of-followers"></p>
+          <p class="followers-text">Followers</p>
+
+          <div class="follower-change">
+            <img
+              class="icon-up"
+              src="images/icon-up.svg"
+              alt="icon up"
+              srcset=""
+            />
+            <p class="today">12 Today</p>
+          </div>
+        </div>
+        <div class="account-card">
+          <div class="social">
+            <div class="icon">
+              <img
+                src="images/icon-twitter.svg"
+                alt="faceboobk icon"
+                srcset=""
+              />
+            </div>
+            <p class="username">@nathanf</p>
+          </div>
+          <p class="num-of-followers"></p>
+          <p class="followers-text">Followers</p>
+          <div class="follower-change">
+            <img
+              class="icon-up"
+              src="images/icon-up.svg"
+              alt="icon up"
+              srcset=""
+            />
+            <p class="today">99 Today</p>
+          </div>
+        </div>
+
+        <div class="account-card">
+          <div class="social">
+            <div class="icon">
+              <img
+                src="images/icon-instagram.svg"
+                alt="faceboobk icon"
+                srcset=""
+              />
+            </div>
+            <p class="username">@realnathanf</p>
+          </div>
+          <p class="num-of-followers"></p>
+          <p class="followers-text">Followers</p>
+          <div class="follower-change">
+            <img
+              class="icon-up"
+              src="images/icon-up.svg"
+              alt="icon up"
+              srcset=""
+            />
+
+            <p class="today">1099 Today</p>
+          </div>
+        </div>
+        <div class="account-card">
+          <div class="social">
+            <div class="icon">
+              <img
+                src="images/icon-youtube.svg"
+                alt="faceboobk icon"
+                srcset=""
+              />
+            </div>
+            <p class="username">Nathan F.</p>
+          </div>
+          <p class="num-of-followers"></p>
+          <p class="followers-text">Subscribers</p>
+          <div class="follower-change">
+            <img
+              class="icon-down"
+              src="images/icon-down.svg"
+              alt="icon up"
+              srcset=""
+            />
+            <p class="today">144 Today</p>
+          </div>
+        </div>
+      </section>
+      <section class="overview">
+        <h2 class="title">Overview - Today</h2>
+
+        <div class="per-social-cards">
+          <div class="social-card">
+            <div class="social">
+              <p>Page views</p>
+              <img
+                src="images/icon-facebook.svg"
+                alt="facebook icon"
+                srcset=""
+              />
+            </div>
+            <div class="interactAmt">
+              <p class="num-of-interact"></p>
+              <p class="today"><img src="images/icon-up.svg" alt="" />3%</p>
+            </div>
+          </div>
+          <div class="social-card">
+            <div class="social">
+              <p>Likes</p>
+              <img
+                src="images/icon-facebook.svg"
+                alt="facebook icon"
+                srcset=""
+              />
+            </div>
+            <div class="interactAmt">
+              <p class="num-of-interact"></p>
+              <p class="today down">
+                <img src="images/icon-down.svg" alt="" />2%
+              </p>
+            </div>
+          </div>
+          <div class="social-card">
+            <div class="social">
+              <p>Likes</p>
+              <img
+                src="images/icon-facebook.svg"
+                alt="facebook icon"
+                srcset=""
+              />
+            </div>
+            <div class="interactAmt">
+              <p class="num-of-interact"></p>
+              <p class="today"><img src="images/icon-up.svg" alt="" />2257%</p>
+            </div>
+          </div>
+          <div class="social-card">
+            <div class="social">
+              <p>Profile views</p>
+              <img
+                src="images/icon-facebook.svg"
+                alt="facebook icon"
+                srcset=""
+              />
+            </div>
+            <div class="interactAmt">
+              <p class="num-of-interact"></p>
+              <p class="today"><img src="images/icon-up.svg" alt="" />1375%</p>
+            </div>
+          </div>
+          <div class="social-card">
+            <div class="social">
+              <p>Retweets</p>
+              <img
+                src="images/icon-facebook.svg"
+                alt="facebook icon"
+                srcset=""
+              />
+            </div>
+            <div class="interactAmt">
+              <p class="num-of-interact"></p>
+              <p class="today"><img src="images/icon-up.svg" alt="" />303%</p>
+            </div>
+          </div>
+          <div class="social-card">
+            <div class="social">
+              <p>Likes</p>
+              <img
+                src="images/icon-facebook.svg"
+                alt="facebook icon"
+                srcset=""
+              />
+            </div>
+            <div class="interactAmt">
+              <p class="num-of-interact"></p>
+              <p class="today"><img src="images/icon-up.svg" alt="" /> 553%</p>
+            </div>
+          </div>
+
+          <div class="social-card">
+            <div class="social">
+              <p>Likes</p>
+              <img
+                src="images/icon-youtube.svg"
+                alt="facebook icon"
+                srcset=""
+              />
+            </div>
+            <div class="interactAmt">
+              <p class="num-of-interact"></p>
+              <p class="today down">
+                <img src="images/icon-down.svg" alt="" />
+                19%
+              </p>
+            </div>
+          </div>
+          <div class="social-card">
+            <div class="social">
+              <p>Total views</p>
+              <img
+                src="images/icon-youtube.svg"
+                alt="facebook icon"
+                srcset=""
+              />
+            </div>
+            <div class="interactAmt">
+              <p class="num-of-interact"></p>
+              <p class="today down">
+                <img src="images/icon-down.svg" alt="" />12%
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--      
+ Page Views 87 3% Likes
+    52 2% Likes 5462 2257% Profile Views 52k 1375% Retweets 117 303% Likes 507
+    553% Likes 107 19% Total Views 1407 12% -->
+  </body>
+</html>
